@@ -57,7 +57,7 @@ def update_annot(ind):
 	annot.xy = pos
 	text = "{}".format(" ".join([names[n] for n in ind["ind"]]))
 	annot.set_text(text)
-	annot.get_bbox_patch().set_facecolor(colors[ind["ind"][0]]) #cmap(norm(c[ind["ind"][0]])))
+	annot.get_bbox_patch().set_facecolor(colors[ind["ind"][0]])
 	annot.get_bbox_patch().set_alpha(0.4)
 
 
